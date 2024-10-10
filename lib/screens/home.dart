@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:waselny/screens/auth/login.dart';
+import 'package:waselny/screens/edit_user.dart';
 import 'package:waselny/widgets/map.dart';
 
 class Home extends StatefulWidget {
@@ -65,7 +67,10 @@ class _HomeState extends State<Home> {
                           style: TextStyle(
                                fontFamily: 'Hacen_Tehran')),
                         onTap: () {
-                          Navigator.pop(context);
+                           Navigator.of(context).pushReplacement(
+                      MaterialPageRoute(
+                        builder: (context) => const EditUser(),
+                      ));
                         },
                       ),
                       ListTile(
@@ -83,7 +88,10 @@ class _HomeState extends State<Home> {
                           style: TextStyle(
                                fontFamily: 'Hacen_Tehran')),
                         onTap: () {
-                          Navigator.pop(context);
+                           Navigator.of(context).pushReplacement(
+                      MaterialPageRoute(
+                        builder: (context) => const Login(),
+                      ));
                         },
                       ),
                     ],

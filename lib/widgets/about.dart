@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../screens/home.dart'; // تأكد من تعديل المسار حسب هيكل مشروعك
+import 'package:waselny/screens/auth/login.dart';
 
 class About extends StatefulWidget {
   const About({super.key});
@@ -70,7 +70,7 @@ class _AboutState extends State<About> {
                     // الانتقال إلى صفحة Home
                     Navigator.of(context).pushReplacement(
                       MaterialPageRoute(
-                        builder: (context) => const Home(),
+                        builder: (context) => const Login(),
                       ),
                     );
                   }

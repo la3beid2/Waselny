@@ -138,6 +138,43 @@ class pass extends StatelessWidget {
     );
   }
 }
+class pass2 extends StatelessWidget {
+  const pass2({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return TextField(
+      textAlign: TextAlign.right,
+      textDirection: TextDirection.rtl,
+      obscureText: true,
+      decoration: InputDecoration(
+        border: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(30),
+          borderSide: const BorderSide(
+            color: Color.fromARGB(255, 9, 98, 174),
+            width: 2,
+          ),
+        ),
+        focusedBorder: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(30),
+          borderSide: const BorderSide(
+            color: Color.fromARGB(255, 9, 98, 174),
+            width: 2,
+          ),
+        ),
+        hintText: "أعد إدخال كلمة السر",
+        hintStyle:
+            const TextStyle(color: Colors.grey, fontFamily: 'Hacen_Tehran'),
+        contentPadding:
+            const EdgeInsets.symmetric(vertical: 15, horizontal: 20),
+        prefixIcon: const Icon(
+          Icons.lock,
+          color: Color.fromARGB(255, 9, 98, 174),
+        ),
+      ),
+    );
+  }
+}
 
 class name extends StatelessWidget {
   const name({super.key});
@@ -228,7 +265,30 @@ class bottonsignup extends StatelessWidget {
     );
   }
 }
+class bottonsave extends StatelessWidget {
+  const bottonsave({super.key});
 
+  @override
+  Widget build(BuildContext context) {
+    return ElevatedButton(
+      style: ElevatedButton.styleFrom(
+        backgroundColor: const Color.fromARGB(255, 9, 98, 174),
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(5),
+        ),
+        minimumSize: const Size(double.infinity, 50),
+      ),
+      onPressed: () {},
+      child: const Text(
+        "حفظ",
+        style: TextStyle(
+          fontFamily: 'Hacen_Tehran',
+          color: Colors.white,
+        ),
+      ),
+    );
+  }
+}
 class icons extends StatelessWidget {
   const icons({super.key});
 
